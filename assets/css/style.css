@@ -63,3 +63,12 @@ section .col-md-6 h2 {
 .form-label {
   color: white;
 }
+
+.modal-content {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+}
+
+.modal-body p {
+  margin-bottom: 0.5rem;
+}
