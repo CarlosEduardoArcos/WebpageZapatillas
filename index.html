@@ -51,33 +51,62 @@
     </div>
   </div>
   <!-- Producto Destacado -->
-<section class="container my-5">
-  <div class="row">
-    <!-- Imágenes -->
-    <div class="col-md-6 text-center">
-      <img src="./assets/img/p-JH7234-8_1800x.jpg" alt="Zapatilla principal" class="img-fluid mb-3" id="mainImage">
-      <div class="d-flex justify-content-center gap-2">
-        <img src="./assets/img/p-JH7234-8_1800x.jpg" alt="Mini 1" class="mini-img" onclick="cambiarImagen(this)">
-        <img src="./assets/img/p-JH8673-1_1800x.jpg" alt="Mini 2" class="mini-img" onclick="cambiarImagen(this)">
-        <img src="./assets/img/p-JI1710-1_1800x.jpg" alt="Mini 3" class="mini-img" onclick="cambiarImagen(this)">
+  <section class="container my-5">
+    <div class="row">
+      <!-- Imágenes -->
+      <div class="col-md-6 text-center">
+        <img src="./assets/img/p-JH7234-8_1800x.jpg" alt="Zapatilla principal" class="img-fluid mb-3" id="mainImage">
+        <div class="d-flex justify-content-center gap-2">
+          <img src="./assets/img/p-JH7234-8_1800x.jpg" alt="Mini 1" class="mini-img" onclick="cambiarImagen(this)">
+          <img src="./assets/img/p-JH8673-1_1800x.jpg" alt="Mini 2" class="mini-img" onclick="cambiarImagen(this)">
+          <img src="./assets/img/p-JI1710-1_1800x.jpg" alt="Mini 3" class="mini-img" onclick="cambiarImagen(this)">
+        </div>
+      </div>
+      <!-- Detalles -->
+      <div class="col-md-6">
+        <h2 class="mb-3">Zapatillas Hombre Puma Urbano Blanco Court Classic</h2>
+        <p><del>$49.990</del> <strong class="text-success">$29.990</strong> <span class="badge bg-danger">-40%</span></p>
+  
+        <!-- Guía de tallas -->
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <p class="mb-1 fw-semibold">Elige tu talla:</p>
+          <a href="./assets/img/guia-tallas.jpg" target="_blank" class="text-decoration-underline small text-white">Guía de tallas</a>
+        </div>
+  
+        <!-- Tallas -->
+        <div class="d-flex flex-wrap gap-2 mb-3" id="tallas">
+          <button type="button" class="btn btn-outline-light talla-btn">39</button>
+          <button type="button" class="btn btn-outline-light talla-btn">40</button>
+          <button type="button" class="btn btn-outline-light talla-btn">41</button>
+          <button type="button" class="btn btn-outline-light talla-btn">42</button>
+          <button type="button" class="btn btn-outline-light talla-btn">43</button>
+        </div>
+  
+        <!-- Método de entrega -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Método de entrega:</label>
+          <select class="form-select" id="metodoEntrega" onchange="mostrarDatosEntrega()">
+            <option value="retiro">Retiro en tienda</option>
+            <option value="domicilio">Envío a domicilio</option>
+          </select>
+        </div>
+  
+        <!-- Campos de dirección y teléfono -->
+        <div id="datosEnvio" class="mb-3 d-none">
+          <div class="mb-2">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Ej: Calle 123, Valdivia">
+          </div>
+          <div>
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Ej: +56912345678">
+          </div>
+        </div>
+  
+        <button class="btn btn-primary w-100 mt-3" onclick="agregarCarrito()">Añadir al carrito</button>
       </div>
     </div>
-    <!-- Detalles -->
-    <div class="col-md-6">
-      <h2 class="mb-3">Zapatillas Hombre Puma Urbano Blanco Court Classic</h2>
-      <p><del>$49.990</del> <strong class="text-success">$29.990</strong> <span class="badge bg-danger">-40%</span></p>
-      <p class="mb-1">Talla:</p>
-      <div class="d-flex flex-wrap gap-2 mb-3" id="tallas">
-        <button type="button" class="btn btn-outline-light talla-btn">39</button>
-        <button type="button" class="btn btn-outline-light talla-btn">40</button>
-        <button type="button" class="btn btn-outline-light talla-btn">41</button>
-        <button type="button" class="btn btn-outline-light talla-btn">42</button>
-        <button type="button" class="btn btn-outline-light talla-btn">43</button>
-      </div>
-      <button class="btn btn-primary" onclick="agregarCarrito()">Añadir al carrito</button>
-    </div>
-  </div>
-</section>
+  </section>  
 
 <script src="./assets/js/scripts.js"></script>
 <!-- Bootstrap JS -->
