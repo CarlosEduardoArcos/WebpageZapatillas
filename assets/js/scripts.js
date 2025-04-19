@@ -10,9 +10,13 @@ document.querySelectorAll('.talla-btn').forEach(btn => {
 
 function agregarCarrito() {
   if (!tallaSeleccionada) {
-    alert("Por favor, selecciona una talla antes de añadir al carrito.");
+    setTimeout(() => {
+      alert("Por favor, selecciona una talla antes de añadir al carrito.");
+    }, 100);
   } else {
-    alert(`Producto añadido al carrito (Talla: ${tallaSeleccionada})`);
+    setTimeout(() => {
+      alert(`Producto añadido al carrito (Talla: ${tallaSeleccionada})`);
+    }, 100);
   }
 }
 

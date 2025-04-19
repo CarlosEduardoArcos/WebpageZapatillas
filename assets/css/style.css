@@ -46,3 +46,10 @@ body {
   color: black;
   font-weight: bold;
 }
+
+section .col-md-6 h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #fff;
+}
