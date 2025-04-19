@@ -39,13 +39,13 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./assets/img/carrusel1.jpg" class="d-block w-100" alt="zapatillas1">
+          <img src="./assets/img/carrusel44.jpg" class="d-block w-100" alt="zapatillas1">
         </div>
         <div class="carousel-item">
-          <img src="./assets/img/carrusel4.jpg" class="d-block w-100" alt="zapatillas2">
+          <img src="./assets/img/carrusel999.jpg" class="d-block w-100" alt="zapatillas2">
         </div>
         <div class="carousel-item">
-          <img src="./assets/img/carrusel3.jpg" class="d-block w-100" alt="zapatillas3">
+          <img src="./assets/img/carrusel99999.jpg" class="d-block w-100" alt="zapatillas3">
         </div>
       </div>
     </div>
@@ -72,14 +72,33 @@
           <p class="mb-1 fw-semibold">Elige tu talla:</p>
           <a href="./assets/img/guiatallas.png" target="_blank" class="text-decoration-underline small text-white">Guía de tallas</a>
         </div>
-  
+        <!--Agrega un selector de color-->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Color:</label>
+          <select class="form-select" id="colorSeleccionado">
+            <option value="Blanco">Blanco</option>
+            <option value="Negro">Negro</option>
+            <option value="Rojo">Rojo</option>
+          </select>
+        </div>
         <!-- Tallas -->
         <div class="d-flex flex-wrap gap-2 mb-3" id="tallas">
-          <button type="button" class="btn btn-outline-light talla-btn">39</button>
+          <button type="button" class="btn btn-outline-light talla-btn">36</button>
+          <button type="button" class="btn btn-outline-light talla-btn">36 2/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">37 1/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">38</button>
+          <button type="button" class="btn btn-outline-light talla-btn">38 2/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">39 1/3</button>
           <button type="button" class="btn btn-outline-light talla-btn">40</button>
-          <button type="button" class="btn btn-outline-light talla-btn">41</button>
+          <button type="button" class="btn btn-outline-light talla-btn">40 2/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">41 1/3</button>
           <button type="button" class="btn btn-outline-light talla-btn">42</button>
-          <button type="button" class="btn btn-outline-light talla-btn">43</button>
+          <button type="button" class="btn btn-outline-light talla-btn">42 2/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">43 1/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">44</button>
+          <button type="button" class="btn btn-outline-light talla-btn">44 2/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">45 1/3</button>
+          <button type="button" class="btn btn-outline-light talla-btn">46</button>
         </div>
   
         <!-- Método de entrega -->
@@ -118,5 +137,25 @@
 <a href="https://www.instagram.com/empresa" class="btn btn-social-icon btn-instagram" style="background-color: #e4405f; color: white; font-size: 24px; padding: 10px 15px; border-radius: 50%;"><i class="fab fa-instagram"></i></a>
 <a href="https://www.twitter.com/empresa" class="btn btn-social-icon btn-twitter" style="background-color: #1da1f2; color: white; font-size: 24px; padding: 10px 15px; border-radius: 50%;"><i class="fab fa-twitter"></i></a>
 </footer>
+
+<!-- Modal de resumen -->
+<div class="modal fade" id="resumenModal" tabindex="-1" aria-labelledby="resumenModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resumenModalLabel">Resumen del Pedido</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body" id="resumenContenido">
+        <!-- Aquí se cargará el resumen con JS -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
