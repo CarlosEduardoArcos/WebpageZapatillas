@@ -3,26 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TillasUrban</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <title>CalzadoUrban</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/img/icon.jpg" type="image/jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-  <h1>Holaaa</h1>
-  <p>Bienvenidos todos</p>
+<!-- Topbar con íconos -->
+<div class="topbar text-white py-2 px-3 d-flex justify-content-center justify-content-md-between align-items-center">
+  <div class="text-center text-md-start small">
+    <i class="bi bi-envelope me-1"></i> contacto@calzadourban.cl
+  </div>
+  <div class="d-none d-md-flex gap-3 small">
+    <span><i class="bi bi-truck me-1"></i> Despachos</span>
+    <span><i class="bi bi-arrow-repeat me-1"></i> Cambios y devoluciones gratis</span>
+    <span><i class="bi bi-shop me-1"></i> Retiro en Tienda</span>
+  </div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container justify-content-center">
+    <a class="navbar-brand d-flex align-items-center text-white" href="#" style="gap: 10px;">
+      <img src="./assets/img/icon.jpg" alt="logo" width="60" height="60">
+      <span class="logo-text">CALZADO URBAN - Todo el estilo para ti</span>
+    </a>
+  </div>
+</nav>
+  <!-- Carrusel -->
+  <div class="container-fluid px-0 mt-4">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/carrusel1.jpg" class="d-block w-100" alt="zapatillas1">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/carrusel4.jpg" class="d-block w-100" alt="zapatillas2">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/carrusel3.jpg" class="d-block w-100" alt="zapatillas3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Producto Destacado -->
+<section class="container my-5">
+  <div class="row">
+    <!-- Imágenes -->
+    <div class="col-md-6 text-center">
+      <img src="./assets/img/p-JH7234-8_1800x.jpg" alt="Zapatilla principal" class="img-fluid mb-3" id="mainImage">
+      <div class="d-flex justify-content-center gap-2">
+        <img src="./assets/img/zapatilla1.jpg" alt="Mini 1" class="mini-img" onclick="cambiarImagen(this)">
+        <img src="./assets/img/zapatilla2.jpg" alt="Mini 2" class="mini-img" onclick="cambiarImagen(this)">
+        <img src="./assets/img/zapatilla3.jpg" alt="Mini 3" class="mini-img" onclick="cambiarImagen(this)">
+      </div>
+    </div>
+    <!-- Detalles -->
+    <div class="col-md-6">
+      <h2 class="mb-3">Zapatillas Hombre Puma Urbano Blanco Court Classic</h2>
+      <p><del>$49.990</del> <strong class="text-success">$29.990</strong> <span class="badge bg-danger">-40%</span></p>
+      <p class="mb-1">Talla:</p>
+      <div class="d-flex flex-wrap gap-2 mb-3" id="tallas">
+        <button class="btn btn-outline-light talla-btn">39</button>
+        <button class="btn btn-outline-light talla-btn">40</button>
+        <button class="btn btn-outline-light talla-btn">41</button>
+        <button class="btn btn-outline-light talla-btn">42</button>
+        <button class="btn btn-outline-light talla-btn">43</button>
+      </div>
+      <button class="btn btn-primary" onclick="agregarCarrito()">Añadir al carrito</button>
+    </div>
+  </div>
+</section>
 
+<script src="./assets/js/scripts.js"></script>
 
-
-
-
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
