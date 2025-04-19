@@ -24,3 +24,13 @@ function cambiarImagen(elemento) {
   const mainImg = document.getElementById('mainImage');
   mainImg.src = elemento.src;
 }
+
+function mostrarDatosEntrega() {
+  const metodo = document.getElementById('metodoEntrega').value;
+  const datosEnvio = document.getElementById('datosEnvio');
+  if (metodo === 'domicilio') {
+    datosEnvio.classList.remove('d-none');
+  } else {
+    datosEnvio.classList.add('d-none');
+  }
+}

@@ -53,3 +53,13 @@ section .col-md-6 h2 {
   font-size: 1.8rem;
   color: #fff;
 }
+
+.talla-btn.active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.form-label {
+  color: white;
+}
